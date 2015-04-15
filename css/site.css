@@ -1,0 +1,298 @@
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+
+/* BASIC PAGE STYLES */
+body {
+    background: #d1dce8 url("../img/background.png") fixed left top no-repeat;
+    position:relative;
+    font-family: "Open Sans";
+    font-size:2.3em;
+}
+
+h1, h2, h3, h4 {
+    text-shadow: 1px 1px 0 #ffffff, 2px 2px 0 #ffffff, 3px 3px 0 #ffffff, 4px 4px 0 #ffffff;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+h1 {
+    font-size:5.5em;
+    text-align:right;
+}
+
+h2 {
+    font-size:2em;
+}
+h3 {
+    font-size:1.7em;
+}
+h4 {
+    font-size:1.3em;
+    font-style:italic;
+}
+
+a {
+    -webkit-transition: all .2s ease-in-out;
+    -webkit-transition-property: all;
+    -webkit-transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-delay: initial;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+blockquote {
+    border-left: 5px solid #365e93;
+    font-size:1.2em;
+    margin-left:15px;
+}
+/* NAVIGATION */
+nav#main {
+    position:fixed;
+    top:40px;
+    z-index:50;
+    width:100%;
+}
+.nav li {
+    margin-left:40px;
+    background-color:#365e93;
+    float:left;
+    font-size:1.5em;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    list-style-type:none;
+}
+.nav li a {
+    color:#ffffff;
+    padding:4px 20px;
+    display:block;
+    box-shadow: 3px 3px 10px #666666;
+}
+.nav li a:hover, .nav li a:focus, .nav li.active a {
+    background-color:#ffffff;
+    color:#365e93;
+}
+
+.nav-right li {
+  float:right;
+  margin-right:40px;
+  background-color:#ffffff;
+}
+.nav-right li a {
+    color:#365e93;  
+}
+.nav-right li a:hover, .nav-right li a:focus, .nav-right li.active a {
+    background-color:#365e93;
+    color:#ffffff;
+}
+.nav:after {
+  clear:none;
+}
+
+/* HEADER */
+.masthead {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.5);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#7FFFFFFF",endColorStr="#7FFFFFFF");
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#7FFFFFFF",endColorStr="#7FFFFFFF");
+    margin:150px 0px 150px 0px;
+    padding:30px;
+    color:#000000;
+}
+.header-box {
+    max-width:1000px;
+}
+/* CONTENT */
+#main-content {
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.97);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#F7FFFFFF",endColorStr="#F7FFFFFF");
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#F7FFFFFF",endColorStr="#F7FFFFFF");
+}
+.content-box {
+    /*margin-top:150px;
+    margin-bottom:100px;*/
+    margin-top:100px;
+    color:#000000;
+    padding:10px;
+}
+#content {
+    height: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+
+#content article {
+    min-height:100%;
+    overflow:hidden;
+    display:block;
+    position:relative;
+}
+#content article .inner {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+#content .content-box, #content .footer-box {
+    padding: 20px 60px 60px;
+}
+
+/* SPECIAL CONTENT */
+
+.current-progress-box {
+    margin-top:20px;
+    background-color: rgb(255,255,255);
+    background-color: rgba(255,255,255,0.95);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#F2FFFFFF",endColorStr="#F2FFFFFF");
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#F2FFFFFF",endColorStr="#F2FFFFFF");
+    box-shadow: 2px 2px 4px #666666;
+    max-height:600px;
+    overflow-y:scroll;
+}
+
+.current-progress-box dl {
+    float: left;
+    margin: 0;
+    padding: 0 0 15px;
+}
+
+.current-progress-box dl dt {
+    clear: left;
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 3px 0 0;
+    text-align: right;
+    width: 50px;
+}
+
+.current-progress-box dl dd {
+    margin: 0 0 0 70px;
+    padding: 6px 0 0;
+    font-size:0.8em;
+}
+
+/* FOOTER */
+
+.footer-box {
+    background-color: rgba(0,0,0,0.8);
+    filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#CC000000",endColorStr="#CC000000");
+    -ms-filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=1,startColorStr="#CC000000",endColorStr="#CC000000");
+    padding:10px;
+    clear:both;
+    font-size:1.1em;
+}
+.footer-box, .footer-box a {
+    color:#ffffff;
+}
+.footer-box h2 {
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000, 3px 3px 0 #000000, 4px 4px 0 #000000;
+}
+.footer-right {
+    padding-top:100px;
+    font-size:0.6em;
+}
+.footer-box a {
+    border-bottom:1px dashed;
+}
+.footer-box a:hover {
+    border-bottom:none;
+    text-decoration:none;
+    color:#cccccc;
+}
+.clearer {
+    clear:both;
+}
+.thumbnail {
+  margin-left: 14px;
+}
+.thumbnail .caption {
+  font-size:14px;
+  font-style:italic;
+}
+.content-box ul li {
+  list-style-type:square;
+}
+/* NAVBAR STYLING */
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus, 
+.navbar-default .navbar-brand:hover {
+    color:#ffffff;
+    font-size: 1.9em;
+    text-shadow: 1px 1px 0 #000000, 2px 2px 0 #000000, 3px 3px 0 #000000, 4px 4px 0 #000000;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.navbar-default {
+    background: none;
+    border: none;
+}
+.navbar-toggle {
+    background-color: white;
+}
+
+/* STYLING FOR MOBILE */
+
+@media (min-width:768px) {
+    .navbar-brand {
+        display:none;
+    }
+}
+
+@media (max-width: 768px) {
+    h2, .footer h2{font-size: 1.8em;}
+    body{font-size: 1.5em;}
+    .thumbnail{
+        width:300px;}
+    #home .inner div {
+        display:none;
+    }
+    .navbar-default {
+        background:#365e93;
+    }
+    .navbar-collapse {
+        background:#ffffff;
+    }
+    .navbar-collapse ul li,
+    .navbar-collapse ul.nav-right li a  {
+        float: inherit;
+        background: #ffffff;
+    }
+    .navbar-collapse ul li a,
+    .navbar-collapse ul.nav-right li a {
+        box-shadow:inherit;
+        color: #666666;
+    }
+    .navbar-collapse li a:hover, .navbar-collapse li a:focus, 
+    .navbar-collapse li.active a,
+    ul.nav-right li a:hover, 
+    ul.nav-right a:focus {
+        color: #365e93;
+    }
+    .navbar.collapse ul.pull-right {
+        float:inherit;
+    }
+    .navbar-header {
+        padding:10px;
+    }
+    nav#main {
+        top:0px;
+    }
+    .current-progress-box {
+        box-shadow:none;
+        background:inherit;
+        max-height:inherit;
+        overflow-y:inherit;
+    }    
+    .current-progress-box dl dd {
+        font-size:1em;
+    }
+    #content {
+        margin-top: 40px;
+    }
+    #content .content-box {
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .footer-right {
+        padding-top:inherit;
+        font-size:1em;
+    }
+}
